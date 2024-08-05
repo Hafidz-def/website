@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      body {
+        background-color: #f8d7da; /* Light pink background */
+        font-family: "Arial", sans-serif;
+      }
+      .navbar,
+      .footer {
+        background-color: #e83e8c; /* Pink color for navbar and footer */
+        color: white;
+      }
+      .navbar-nav .nav-link {
+        color: white;
+        transition: color 0.3s;
+      }
+      .navbar-nav .nav-link:hover {
+        color: #f8d7da;
+      }
+      .header-img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        border: 5px solid white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .header {
+        background-color: #e83e8c;
+        color: white;
+        padding: 40px 0;
+        text-align: center;
+      }
+      .article {
+        text-align: center;
+        margin: 2em 0;
+      }
+      .table-container {
+        max-width: 600px;
+        margin: 3em auto;
+      }
+      .table {
+        border-collapse: separate;
+        border-spacing: 0;
+      }
+      .table th,
+      .table td {
+        border: 1px solid #e83e8c;
+        padding: 15px;
+        background-color: white;
+      }
+      .table thead th {
+        background-color: #e83e8c;
+        color: white;
+      }
+      .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .card-header {
+        background-color: #e83e8c;
+        color: white;
+        font-weight: bold;
+      }
+      .footer p {
+        margin: 0;
+      }
+      .btn-custom {
+        background-color: #e83e8c;
+        color: white;
+        border: none;
+      }
+      .btn-custom:hover {
+        background-color: #d6336c;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="home.html">HOME</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="contac.html">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header">
+      <img src="gloria.jpg" class="header-img" alt="Profile Picture" />
+      <h1>Gloria Betriks Serandoma</h1>
+      <p>(Mahasiswa)</p>
+      <a href="#overview" class="btn btn-custom">See More</a>
+    </header>
+
+    <div class="container">
+      <article class="article" id="overview">
+        <h2>Overview</h2>
+        <p>Hi, saya web developer yang berdomisili di Jakarta. Saat ini sedang belajar HTML di Petani Kode.</p>
+      </article>
+
+      <div class="table-container">
+        <div class="card">
+          <div class="card-header">Skills & Experience</div>
+          <div class="card-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Skill</th>
+                  <th>Pengalaman</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>HTML (Expert)</li>
+                      <li>CSS (Beginner)</li>
+                      <li>Javascript (Beginner)</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Pernah bekerja di---</li>
+                      <li>Menjadi leader di komunitas</li>
+                      <li>Kontributor open source</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer text-center py-3">
+      <p>Copyright 2024 @gloria betriks serandoma</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
